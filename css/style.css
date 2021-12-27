@@ -1,0 +1,757 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1,h2,h3,h4,h5,h6,p,figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* header nav starts */
+
+#home {
+    position: sticky;
+    top: 0;
+    background: #404040;
+    z-index: 9;
+}
+
+nav {
+    padding: 15px 0;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 6px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 12px;
+}
+
+.active {
+    background: #77aad9;
+}
+
+.menu li a:hover {
+    background: #77aad9;
+}
+
+
+/* header ends */
+
+
+/* online therapy section starts */
+
+.online-therapy-image {
+    width: 45%;
+}
+
+.online-therapy-image figure {
+    height: 100%;
+}
+
+.online-therapy-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.online-therapy-content {
+    width: 30%;
+    margin: auto;
+}
+
+.section-subheading {
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section-heading {
+    font-size: 46px;
+    font-weight: 900;
+    color: #111111;
+}
+
+.section-para {
+    font-size: 18px;
+    line-height: 2;
+    margin: 30px 0;
+    color: #000;
+    font-weight: 600;
+}
+
+.mybutton {
+    background: #77aad9;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.mybutton:hover {
+    background: #adcce9;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.empty-bg {
+    width: 20%;
+    background: #adcce9;
+}
+
+
+/* online therapy section starts */
+
+
+/* info section starts */
+
+.inner {
+    padding: 90px 0;
+}
+
+.info {
+    padding: 90px 65px;
+}
+
+.info-left {
+    width: 45%;
+    padding-left: 30px;
+}
+
+.heading-underline {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.heading-underline:before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    background: #454545;
+    width: 24%;
+    bottom: 0;
+    left: 0;
+}
+
+.info-right {
+    width: 45%;
+}
+
+.info-right .section-para {
+    color: #888;
+    margin: 0;
+}
+
+
+/* info section ends */
+
+
+/* author section starts */
+
+.one-two-bg {
+    background-color: #adcce9;
+}
+
+.one-two-section {
+    justify-content: flex-end;
+    position: relative;
+}
+
+.one-two-section:after {
+    position: absolute;
+    content: "";
+    background: #fbadb0;
+    width: 84%;
+    height: 95%;
+    left: 0;
+    bottom: -50px;
+    z-index: 0;
+}
+
+.one-img {
+    width: 60%;
+    z-index: 1;
+}
+
+.one-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.one-two-content {
+    width: 35%;
+    background: #fff;
+    padding: 50px;
+    z-index: 1;
+}
+
+.two {
+    padding-top: 20px;
+}
+
+
+/* author section starts */
+
+
+/* mental health section starts */
+
+.mental-health-left {
+    width: 45%;
+}
+
+.mental-content {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.mental-health-left .mental-content {
+    margin-bottom: 85px;
+}
+
+.mental-image {
+    width: 100%;
+    position: relative;
+    top: 35px;
+    margin-bottom: 100px;
+}
+
+.mental-empty-box {
+    background: #fbadb0;
+    max-width: 400px;
+    height: 450px;
+}
+
+.mental-image figure {
+    position: absolute;
+    top: -80px;
+    left: 60px;
+    width: 80%;
+    height: 450px;
+    z-index: 1;
+}
+
+.mental-health-left .mental-image figure {
+    top: 60px;
+}
+
+.mental-image figure img {
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 40px 0 rgb(26 26 26 / 40%);
+}
+
+.mental-empty-box-right {
+    background: #abc9e5;
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    top: -60px;
+    right: 0;
+    z-index: 0;
+}
+
+.mental-health-left .mental-empty-box-right {
+    top: 130px;
+    right: -20px;
+}
+
+.mental-health-right {
+    width: 45%;
+}
+
+.mental-health-right .mental-image {
+    margin-bottom: 40%;
+}
+
+
+/* programs section starts */
+
+#programs {
+    background: #adcce9;
+    position: relative;
+    z-index: 1;
+    height: 1100px;
+}
+
+#programs:before {
+    position: absolute;
+    content: "";
+    background: #fbadb0;
+    height: 100%;
+    width: 22%;
+    top: 0;
+    right: 26%;
+    z-index: -1;
+}
+
+.programs-container {
+    position: relative;
+}
+
+.programs-banner {
+    width: 80%;
+}
+
+.programs-banner figure img {
+    position: relative;
+    right: -165px;
+    text-align: right;
+}
+
+.workshops {
+    width: 45%;
+    background: #fff;
+    padding: 40px;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+}
+
+.workshops .section-para {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.workshops .heading-underline:before {
+    width: 85%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.programs-text-right {
+    width: 42%;
+    background: #fff;
+    padding: 50px 30px;
+    bottom: -48%;
+    right: 0;
+    position: absolute;
+}
+
+.programs-text-right .section-heading {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.programs-text-right p {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+
+/* programs section ends */
+
+
+/* service section starts */
+
+.service-top {
+    padding-left: 30px;
+}
+
+.service-left {
+    width: 48%;
+}
+
+.service-left .section-heading {
+    line-height: 1.2;
+    font-size: 40px;
+}
+
+.service-right {
+    width: 48%;
+    padding: 30px 0;
+}
+
+.service-right .section-para {
+    margin: 0;
+}
+
+.service-bottom {
+    margin-top: 80px;
+}
+
+.service-bottom-box {
+    width: 32%;
+    background: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+.service-bottom-box h3 {
+    font-size: 30px;
+    color: #000;
+}
+
+.service-bottom-box .section-para {
+    color: #3a3a3a;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* service section ends */
+
+
+/* gallery section starts */
+
+.gallery-section {
+    background: #adcce9;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-section:before {
+    position: absolute;
+    content: "";
+    background: #fbadb0;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    z-index: -1;
+}
+
+.gallery-section .section-heading {
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.gallery-image figure {
+    width: 32%;
+    height: 300px;
+    margin-bottom: 22px;
+}
+
+.gallery-image figure img {
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+/* gallery section ends */
+
+
+/* contact section starts */
+
+#contact {
+    background: #333333;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.contact-section {
+    align-items: center;
+}
+
+.contact-section p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.social-icon a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social-icon a:first-child {
+    margin-left: 0;
+}
+
+.social-icon a i {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 18px;
+}
+
+
+/* media query starts */
+
+@media(max-width: 991px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu {
+        display: none;
+        width: 60%;
+        position: absolute;
+        top: 70px;
+        background: #404040;
+        left: 0;
+        height: calc(100vh - 70px);
+        border-top: 1px solid #d5d5d542;
+    }
+    .menu li {
+        padding: 20px;
+        margin: 0;
+        border-bottom: 1px solid #d5d5d542;
+    }
+    .menu li a:hover {
+        background: #404040;
+    }
+    .active {
+        background: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .online-therapy-image {
+        width: 55%;
+    }
+    .online-therapy-content {
+        width: 35%;
+    }
+    .empty-bg {
+        width: 5%
+    }
+    .mental-empty-box {
+        max-width: 350px;
+    }
+    .mental-image figure {
+        left: 50px;
+        top: -55px;
+    }
+    .mental-empty-box-right {
+        top: -10px;
+        height: 85%;
+    }
+    .programs-banner {
+        width: 90%;
+    }
+    #programs:before {
+        width: 40%;
+        right: 15%;
+    }
+    .programs-container {
+        position: static;
+    }
+    .programs-banner figure img {
+        right: -50px;
+    }
+    .workshops {
+        top: 40%;
+    }
+    .programs-text-right {
+        bottom: 70px;
+        right: 3%;
+    }
+}
+
+@media(max-width: 768px) {
+    .section-heading, .service-left .section-heading {
+        font-size: 35px;
+    }
+    .one-two-content {
+        padding: 25px;
+    }
+    .mental-health-left, .mental-health-right {
+        width: 100%;
+    }
+    .mental-health-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .mental-health-right .mental-content {
+        order: 1;
+        margin: 100px 0;
+    }
+    .mental-health-right .mental-image {
+        order: 2;
+        margin-bottom: 0;
+    }
+    #programs {
+        height: 1250px;
+    }
+    .workshops {
+        top: -220px;
+        width: 60%;
+        position: relative;
+    }
+    .programs-text-right {
+        bottom: 50px;
+        width: 60%;
+    }
+    .programs-text-right p {
+        font-size: 22px;
+    }
+    .programs-container .mybutton {
+        padding: 15px 25px;
+    }
+    .programs-container .mybutton {
+        font-size: 14px;
+    }
+    .service-bottom-box {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+    .gallery-image figure {
+        width: 49%;
+    }
+}
+
+@media(max-width: 576px) {
+    .online-therapy-image, .online-therapy-content {
+        width: 90%;
+    }
+    .online-therapy-content {
+        padding: 40px 45px 0 50px;
+    }
+    .online-therapy-image:before {
+        position: absolute;
+        content: "";
+        background: #adcce9;
+        height: 100%;
+        width: 10%;
+        right: 0;
+        top: 71px;
+    }
+    .empty-bg {
+        width: 10%;
+    }
+    .info {
+        padding-left: 50px;
+    }
+    .info-left, .info-right, .service-left, .service-right, .service-bottom-box, .gallery-image figure {
+        width: 100%;
+    }
+    .info-left {
+        margin-bottom: 50px;
+    }
+    .one-img,
+    .one-two-content {
+        width: 90%;
+    }
+    #programs:before {
+        width: 65%;
+        right: 23px;
+    }
+    .programs-banner figure img {
+        min-height: 300px;
+        object-fit: cover;
+        right: -40px;
+    }
+    .workshops {
+        width: 80%;
+        top: -80px;
+        position: relative;
+    }
+    .workshops .section-subheading {
+        font-size: 16px;
+    }
+    .programs-text-right {
+        width: 89%;
+        top: -78px;
+        position: relative;
+        left: 0;
+    }
+    .programs-text-right p {
+        font-size: 20px;
+    }
+    .service-left {
+        margin-bottom: 30px;
+    }
+    .contact-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icon {
+        margin-top: 15px;
+    }
+    .social-icon a i {
+        padding: 16px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 400px) {
+    #programs {
+        min-height: 1400px;
+    }
+    .menu {
+        width: 90%;
+    }
+    .info-left {
+        padding-left: 0;
+    }
+}
