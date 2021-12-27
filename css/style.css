@@ -544,6 +544,37 @@ nav {
     font-size: 18px;
 }
 
+footer{
+    position: relative;
+}
+
+footer:after {
+    content: "";
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #fbadb0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0px;
+}
+
+.bottom-arrow {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.bottom-arrow a {
+    color: #fff;
+    font-size: 20px;
+}
+
 
 /* media query starts */
 
@@ -737,7 +768,7 @@ nav {
         align-items: center;
     }
     .social-icon {
-        margin-top: 15px;
+        margin: 20px 0;
     }
     .social-icon a i {
         padding: 16px;
