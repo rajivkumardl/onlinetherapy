@@ -20,7 +20,9 @@
                   <a href="#">logo</a>
                </div>
                <div class="mobile-menu">
-                  <i class="fa fa-bars"></i>
+                  <div class="spinner top"></div>
+                  <div class="spinner middle"></div>
+                  <div class="spinner bottom"></div>
                </div>
                <ul class="menu flex">
                   <li><a href="#" class="active">home</a></li>
@@ -222,10 +224,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
          $(document).ready(function(){
-         	$(".mobile-menu").click(function(){
-         		$(".menu").slideToggle();
-         		});
-         	});
+            $(".mobile-menu").click(function(){
+               $(".menu").toggleClass("mobile-active");
+               });
+            $(".menu").click(function(){
+               $(".menu").toggleClass("mobile-active");
+               });
+            });
       </script>
    </body>
 </html>
