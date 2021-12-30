@@ -70,16 +70,28 @@ nav {
     position: absolute;
     top: 25px;
     right: 25px;
-    cursor: pointer;
 }
 
 .spinner {
     background-color: #fff;
     height: 4px;
+    transition: all 0.3s;
 }
 
 .spinner.top, .spinner.middle{
     margin-bottom: 5px;
+}
+
+.change .top{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .middle{
+    opacity: 0;
+}
+
+.change .bottom{
+    transform: rotate(45deg) translate(-7px, -5px);
 }
 
 .menu {
